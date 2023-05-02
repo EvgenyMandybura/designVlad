@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+.mainContainer {
+  @apply bg-mainLight px-[140px] pt-[55px]
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.caption1 {
+  @apply font-font2 text-base leading-8 text-dark2
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.caption2 {
+  @apply font-font1 text-[100px] leading-[70px] uppercase text-dark2
+}
+
+.caption3 {
+  @apply font-font4 text-base leading-[22px] text-dark2
+}
+
+.caption4 {
+  @apply font-font1 font-normal text-[56px] leading-[64px] text-mainLight
+}
+
+.caption5 {
+  @apply font-font1 font-normal text-[40px] leading-[48px] text-mainLight
+}
+
+.caption6 {
+  @apply font-font4 font-medium text-xs leading-[20px] text-mainLight
+}
+
+.caption7 {
+  @apply font-font2 font-medium text-xs leading-[20px] text-mainLight
+}
+
+.caption8 {
+  @apply font-font1 font-medium text-xs leading-[20px] text-mainLight
+}
+
+.caption9 {
+  @apply font-font1 font-normal text-[56px] leading-[64px]
+}
+
+.caption10 {
+  @apply font-font1 font-normal text-[40px] leading-[48px]
+}
+
+.caption11 {
+  @apply font-font3 font-normal text-sm leading-4
+}
+
+.caption12 {
+  @apply font-font2 text-[72px] leading-[110px]
+}
+
+.linkHover {
+  position: relative;
+}
+
+.linkHover:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #272727;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.linkHover:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.projectNameHover {
+  position: relative;
+}
+
+.projectNameHover:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2px;
+
+  position: absolute;
+  background: #272727;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.projectNameHover:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.arrow-hover {
+  cursor: pointer;
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.arrow-hover {
+  animation: jumpInfinite 1s linear infinite;
+}
+
+
+.photo {
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.photo4 {
+  overflow: hidden;
+  display: flex;
+  justify-content: end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imgProject {
+  transition: transform 1.5s;
+}
+
+.photo:hover .imgProject {
+  transform: scale(1.1);
+}
+
+.photo4:hover .imgProject {
+  transform: scale(1.1);
+}
+
+.img1Bg {
+  background: linear-gradient(360deg, #E89852 2.09%, #F7ED9B 100%), linear-gradient(0deg, #146DC0 0%, #40B0FF 85.47%);
+}
+
+.img4Bg {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03)), linear-gradient(0deg, #383E76 0%, #6F79DB 93.45%);
+}
+
+.img5Bg {
+  background: linear-gradient(0deg, #830A09 0%, #D6512C 93.45%);
+}
+
+.img6Bg {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), linear-gradient(358.07deg, #0652F5 -11.07%, #6491F2 91.47%);
+}
+
+.img7Bg {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), linear-gradient(0deg, #56AA84 0%, #ECF7B9 93.45%);
+}
+
+.img8Bg {
+  background: linear-gradient(158.72deg, #C3BFB5 5.47%, #C9C4BA 45.08%, #E3DFD7 85.99%);
 }
