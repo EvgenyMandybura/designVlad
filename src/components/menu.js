@@ -9,10 +9,10 @@ const Menu = () => (
     <nav>
       <ul className="flex flex-row">
         <li className="caption1 text-dark2 mr-10 linkHover">
-          <Link to="/">Home</Link>
+          <Link to="/">Projects</Link>
         </li>
         <li className="caption1 text-dark2 mr-10 linkHover">
-          <Link to="/projects">Projects</Link>
+          <Link to="/projects">Workflow</Link>
         </li>
         <li className="caption1 text-dark2 linkHover">
           <Link to="/about">About</Link>
