@@ -173,3 +173,94 @@
 .img9Bg {
   background: linear-gradient(0deg, rgba(122, 140, 245, 0.07), rgba(122, 140, 245, 0.07)), linear-gradient(180deg, rgba(127, 255, 163, 0.89) 0%, rgba(163, 255, 161, 0.89) 44.58%, rgba(124, 255, 122, 0.89) 100%)
 }
+
+@keyframes circle {
+  to { transform: rotate(-1turn); }
+}
+@keyframes updown {
+  to { transform: translateX(20px); }
+}
+#star1 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-top: 20px;
+  margin-left: 50px;
+  transform-origin: -200% center;
+  animation: circle 5s infinite linear;
+
+}
+#star1 img { width: 20px; height: 20px;
+  transform-origin: center top;
+  animation: updown 2s infinite alternate ease-in-out;
+  margin-top: 10%;
+}
+
+#star2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-top: 5px;
+  margin-left: 15px;
+  transform-origin: -100% center;
+  animation: circle 3s infinite linear;
+
+}
+#star2 img { width: 20px; height: 20px;
+  transform-origin: center top;
+  animation: updown 2s infinite alternate ease-in-out;
+  margin-top: 10%;
+}
+
+#star3 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-top: 10px;
+  margin-left: 70px;
+  transform-origin: -150% center;
+  animation: circle 8s infinite linear;
+
+}
+#star3 img { width: 20px; height: 20px;
+  transform-origin: center top;
+  animation: updown 5s infinite alternate ease-in-out;
+  margin-top: 10%;
+}
+
+#star4 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  display: block;
+  margin-top: -50px;
+  margin-left: 60px;
+  transform-origin: -120% center;
+  animation: circle 10s infinite linear;
+
+}
+#star4 img { width: 12px; height: 12px;
+  transform-origin: center top;
+  animation: running 10s infinite alternate ease-in-out;
+  margin-top: 10%;
+}
+
+#star5 {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  display: block;
+  margin-top: -30px;
+  margin-left: 35px;
+  transform-origin: -180% center;
+  animation: circle 8s infinite linear;
+
+}
+#star5 img { width: 14px; height: 14px;
+  transform-origin: center top;
+  animation: updown 7s infinite alternate ease-in-out;
+  margin-top: 10%;
+}

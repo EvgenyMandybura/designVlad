@@ -4,6 +4,9 @@ import { ReactComponent as Arrow } from "../assets/arrowBottom.svg";
 import Footer from "../components/footer";
 import { cycleSteps } from "../constants/cycleSteps";
 import twoDiamond from "../assets/twoDiamond.svg";
+import group from "../assets/stars/groupOfStars.svg";
+import star from "../assets/stars/star.svg";
+import star2 from "../assets/stars/star2.svg";
 
 const Projects = () => (
   <div>
@@ -11,7 +14,17 @@ const Projects = () => (
       <Menu />
       <div className="flex flex-col justify-between">
         <div className="flex flex-col items-center mt-[100px] mb-2">
-          <p className="caption2 mr-10 uppercase">My whole design </p>
+          <div className="flex flex-row">
+            <p className="caption2 mr-10 uppercase">My whole design </p>
+            <div>
+              <img src={star} alt="star" id="star1" />
+              <img src={star} alt="star" id="star2" />
+              <img src={star} alt="star" id="star3" />
+              <img src={group} alt="group" />
+              <img src={star} alt="star2" id="star4" />
+              <img src={star} alt="star2" id="star5" />
+            </div>
+          </div>
           <div className="flex flex-row items-center mt-8">
             <p className="font-font3 text-base font-normal text-gray w-[130px]">
               My design is magic and maybe I’m a wizard
