@@ -35,7 +35,7 @@ const Projects = () => (
             onClick={() =>
               document
                 .getElementById("page2")
-                .scrollIntoView({ behavior: "smooth", block: "center" })
+                .scrollIntoView({ behavior: "smooth", block: "start" })
             }
             className="mt-[-90px] "
           />
@@ -43,8 +43,8 @@ const Projects = () => (
       </div>
     </div>
 
-    <div className="bg-mainDark">
-      <div id="page2" className="flex flex-col px-[140px] py-[200px]">
+    <div id="page2" className="bg-mainDark">
+      <div className="flex flex-col px-[140px] py-[200px]">
         <p className="caption5 mb-[80px]">My full cycle Design pipeline</p>
 
         {cycleSteps.map((step, index) => (
@@ -60,7 +60,7 @@ const Projects = () => (
           </div>
         ))}
 
-        <p className="caption5 mt-[200px] mb-[60px]">
+        <p className="caption5 mt-[140px] mb-[60px]">
           I usually use Double Diamond model
         </p>
 
