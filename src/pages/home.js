@@ -7,8 +7,6 @@ import {
 } from "../constants/project";
 import { Project } from "../components/project";
 import Footer from "../components/footer";
-import { ReactComponent as Explore } from "../assets/explore.svg";
-import { ReactComponent as Arrow } from "../assets/arrowBottom.svg";
 
 const Home = () => {
   const [showedMore, setShowedMore] = useState(false);
@@ -36,16 +34,17 @@ const Home = () => {
             <p className="caption2">experiences </p>
           </div>
           <div className="flex flex-col items-center">
-            <Explore />
-            <div className="arrow-hover ml-[-224px] mt-[-196px]">
-              <Arrow
-                onClick={() =>
-                  document
-                    .getElementById("page2")
-                    .scrollIntoView({ behavior: "smooth", block: "center" })
-                }
-                className="mt-[-90px]"
-              />
+            <div
+              className="scroll-downs"
+              onClick={() =>
+                document
+                  .getElementById("page2")
+                  .scrollIntoView({ behavior: "smooth", block: "center" })
+              }
+            >
+              <div className="mousey">
+                <div className="scroller"></div>
+              </div>
             </div>
           </div>
         </div>

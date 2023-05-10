@@ -8,7 +8,7 @@ const Menu = () => {
   return (
     <div className="flex justify-between">
       <p
-        className={`caption1 text-dark2 !tracking-[.02em]" ${
+        className={`caption1 text-dark2 !tracking-[.02em] ${
           pathname !== "/" && "linkHover"
         }`}
       >
@@ -18,17 +18,38 @@ const Menu = () => {
       <nav>
         <ul className="flex flex-row">
           <li
-            className={`caption1 text-dark2 mr-10 !tracking-[.02em]" ${
+            className={`caption1 text-dark2 mr-10 !tracking-[.02em] ${
               pathname !== "/" && "linkHover"
             }`}
           >
             <Link to="/">Projects</Link>
           </li>
-          <li className="caption1 text-dark2 mr-10 linkHover !tracking-[.02em]">
-            <Link to="/projects">Workflow</Link>
+          <li
+            className={`caption1 text-dark2 mr-10 !tracking-[.02em] ${
+              pathname !== "/projects" && "linkHover"
+            }`}
+          >
+            <>
+              <Link
+                to="/projects"
+                className={pathname === "/projects" ? "cursor-default" : null}
+              >
+                Workflow
+              </Link>
+              {pathname === "/projects" && (
+                <div className="linkHoverActive"></div>
+              )}
+            </>
           </li>
-          <li className="caption1 text-dark2 linkHover !tracking-[.02em]">
-            <Link to="/about">About</Link>
+          <li
+            className={`caption1 text-dark2 !tracking-[.02em] ${
+              pathname !== "/about" && "linkHover"
+            }`}
+          >
+            <>
+              <Link to="/about">About</Link>
+              {pathname === "/about" && <div className="linkHoverActive"></div>}
+            </>
           </li>
         </ul>
       </nav>
