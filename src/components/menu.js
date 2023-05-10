@@ -7,23 +7,27 @@ const Menu = () => {
 
   return (
     <div className="flex justify-between">
-      <p className={`caption1 text-dark2 ${pathname !== "/" && "linkHover"}`}>
+      <p
+        className={`caption1 text-dark2 !tracking-[.02em]" ${
+          pathname !== "/" && "linkHover"
+        }`}
+      >
         <Link to="/">Chyhryn Vlad</Link>
       </p>
 
       <nav>
         <ul className="flex flex-row">
           <li
-            className={`caption1 text-dark2 mr-10 ${
+            className={`caption1 text-dark2 mr-10 !tracking-[.02em]" ${
               pathname !== "/" && "linkHover"
             }`}
           >
             <Link to="/">Projects</Link>
           </li>
-          <li className="caption1 text-dark2 mr-10 linkHover">
+          <li className="caption1 text-dark2 mr-10 linkHover !tracking-[.02em]">
             <Link to="/projects">Workflow</Link>
           </li>
-          <li className="caption1 text-dark2 linkHover">
+          <li className="caption1 text-dark2 linkHover !tracking-[.02em]">
             <Link to="/about">About</Link>
           </li>
         </ul>

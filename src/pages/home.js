@@ -22,12 +22,12 @@ const Home = () => {
           <div className="flex flex-col items-center my-[100px]">
             <div className="flex flex-row items-center pb-9">
               <p className="caption2 mr-10">I help companies</p>
-              <p className="caption3">
+              <p className="caption3 !text-[#7A7A7A] !font-font3">
                 Web, mobile applications, <br /> huge systems, CRM and etc.
               </p>
             </div>
             <div className="flex flex-row pb-9">
-              <p className="caption3 mr-10">
+              <p className="caption3 mr-10 !text-[#7A7A7A] !font-font3">
                 Building products that <br /> communicate value & <br /> achieve
                 business goals
               </p>
