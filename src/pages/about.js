@@ -1,7 +1,6 @@
 import React from "react";
 import Menu from "../components/menu";
 import photo from "../assets/photoVlad.svg";
-import { ReactComponent as Arrow } from "../assets/arrowBottom.svg";
 import dog from "../assets/dog.svg";
 import bear from "../assets/bear.svg";
 import turtle from "../assets/turtle.svg";
@@ -9,7 +8,7 @@ import Footer from "../components/footer";
 
 const About = () => (
   <div>
-    <div className="bg-mainLight px-[140px] pt-[40px]">
+    <div className="bg-mainLight px-[140px] pt-[40px] ">
       <Menu />
       <div className="flex flex-col items-center">
         <div className="flex flex-row items-center mt-[100px] mb-2">
@@ -63,31 +62,20 @@ const About = () => (
                 growth.
               </p>
 
-              <div className="w-fit mt-[68px]">
-                <p className="caption1 mb-1">
+              <div className="w-fit my-[68px] ">
+                <p className="caption1 mb-1 hover:mb-3">
                   Open for new opportunities and contacts
                 </p>
-                <div className="w-full h-[1.5px] bg-mainDark"></div>
+                <div className="w-full h-[2px] bg-mainDark"></div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="ml-[-150px]">
-          <Arrow
-            onClick={() =>
-              document
-                .getElementById("page2")
-                .scrollIntoView({ behavior: "smooth", block: "center" })
-            }
-            className="mt-[-90px]"
-          />
         </div>
       </div>
     </div>
 
     <div className="bg-mainDark">
-      <div id="page2" className="flex flex-col px-[140px] py-[200px]">
+      <div className="flex flex-col px-[140px] py-[200px]">
         <div>
           <p className="text-gray">A journey of a thousand miles</p>
           <p className="text-gray pl-12">begins with a single step ©</p>

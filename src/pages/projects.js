@@ -1,6 +1,5 @@
 import React from "react";
 import Menu from "../components/menu";
-import { ReactComponent as Arrow } from "../assets/arrowBottom.svg";
 import Footer from "../components/footer";
 import { cycleSteps } from "../constants/cycleSteps";
 import twoDiamond from "../assets/twoDiamond.svg";
@@ -44,14 +43,18 @@ const Projects = () => (
           </div>
         </div>
         <div className="flex items-center justify-center mt-[200px]">
-          <Arrow
+          <div
+            className="scroll-downs"
             onClick={() =>
               document
                 .getElementById("page2")
                 .scrollIntoView({ behavior: "smooth", block: "start" })
             }
-            className="mt-[-90px] "
-          />
+          >
+            <div className="mousey">
+              <div className="scroller"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

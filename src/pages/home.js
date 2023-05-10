@@ -16,7 +16,7 @@ const Home = () => {
       <div className="bg-mainLight px-[140px] pt-[40px] h-[100vh]">
         <Menu />
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center justify-between">
           <div className="flex flex-col items-center my-[100px]">
             <div className="flex flex-row items-center pb-9">
               <p className="caption2 mr-10">I help companies</p>
