@@ -10,7 +10,7 @@ import star2 from "../assets/stars/star2.svg";
 
 const Projects = () => (
   <div>
-    <div className="bg-mainLight px-[140px] pt-[55px] h-[100vh]">
+    <div className="bg-mainLight px-[140px] pt-[40px] h-[100vh]">
       <Menu />
       <div className="flex flex-col justify-between">
         <div className="flex flex-col items-center mt-[100px] mb-2">

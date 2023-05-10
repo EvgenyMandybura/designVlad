@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="bg-mainLight px-[140px] pt-[55px] h-[100vh]">
+      <div className="bg-mainLight px-[140px] pt-[40px] h-[100vh]">
         <Menu />
 
         <div className="flex flex-col items-center">
@@ -51,7 +51,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="page2" className="bg-mainLight px-[140px] pt-[55px] h-[100vh]">
+      <div id="page2" className="bg-mainLight px-[140px] pt-[40px] h-[100vh]">
         <p className="caption9">
           I am Digital Product Designer with a passion to create simple
           products. I’ve been working in the UX/UI field for 5 years and enjoy

@@ -9,7 +9,7 @@ import Footer from "../components/footer";
 
 const About = () => (
   <div>
-    <div className="bg-mainLight px-[140px] pt-[55px]">
+    <div className="bg-mainLight px-[140px] pt-[40px]">
       <Menu />
       <div className="flex flex-col items-center">
         <div className="flex flex-row items-center mt-[100px] mb-2">
