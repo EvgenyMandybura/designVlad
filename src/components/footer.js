@@ -16,15 +16,31 @@ const Footer = () => (
             <a href="mailto: chyhryn.vlad@gmail.com">E-mail</a>
           </li>
           <li className="caption10 text-dark2 mr-[120px] linkHover">
-            <Link to="https://www.linkedin.com/in/vladyslav-chyhryn/">
+            <Link
+              to="https://www.linkedin.com/in/vladyslav-chyhryn/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               LinkedIn
             </Link>
           </li>
           <li className="caption10 text-dark2 mr-[120px] linkHover">
-            <Link to="https://www.behance.net/chyhryn_vlad">Behance</Link>
+            <Link
+              to="https://www.behance.net/chyhryn_vlad"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Behance
+            </Link>
           </li>
           <li className="caption10 text-dark2 linkHover">
-            <Link to="https://dribbble.com/chyhryn_vlad">Dribbble</Link>
+            <Link
+              to="https://dribbble.com/chyhryn_vlad"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Dribbble
+            </Link>
           </li>
         </ul>
       </nav>
