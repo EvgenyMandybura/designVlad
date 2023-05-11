@@ -50,7 +50,10 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="page2" className="bg-mainLight px-[140px] pt-[40px] min-h-[100vh]">
+      <div
+        id="page2"
+        className="bg-mainLight px-[140px] pt-[40px] min-h-[100vh]"
+      >
         <p className="caption9">
           I am Digital Product Designer with a passion to create simple
           products. I’ve been working in the UX/UI field for 5 years and enjoy
@@ -110,9 +113,9 @@ const Home = () => {
             <div className="bg-gray h-[1px] opacity-50 my-16 w-full" />
             <button
               onClick={() => setShowedMore(!showedMore)}
-              className="w-[154px] hover:border-2 hover:border-gray rounded-[24px]"
+              className="min-h-[50px] hover:border-2 hover:border-gray rounded-[24px]"
             >
-              <p className="font-sans text-base leading-5 text-mainLight min-w-fit mx-10">
+              <p className="font-sans text-base leading-5 text-mainLight mx-8 py-4 w-[90px]">
                 {showedMore ? "Show less" : "Show more"}
               </p>
             </button>
