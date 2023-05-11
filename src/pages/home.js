@@ -50,17 +50,17 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="page2" className="bg-mainLight px-[140px] pt-[40px] h-[100vh]">
+      <div id="page2" className="bg-mainLight px-[140px] pt-[40px] min-h-[100vh]">
         <p className="caption9">
           I am Digital Product Designer with a passion to create simple
           products. I’ve been working in the UX/UI field for 5 years and enjoy
           facing new challenges
         </p>
 
-        <div className="flex flex-row mt-[80px] mb-[200px]">
+        <div className="flex flex-row mt-[80px]">
           <div className={`w-[50%]`}></div>
-          <div className={`w-[50%]`}>
-            <span className="font3 text-dark2 text-lg leading-7">
+          <div className={`w-[50%] mb-[400px]`}>
+            <span className="font3 text-dark2 !font-semibold text-lg leading-7">
               Hi there, I’m Vlad.
             </span>{" "}
             <span className="italic opacity-60">
