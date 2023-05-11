@@ -110,7 +110,7 @@ const Home = () => {
             )
           )}
           <div className="flex flex-row items-center">
-            <div className="bg-gray h-[1px] opacity-50 my-16 w-full" />
+            <div className="bg-gray h-[1px] opacity-50 my-[125px] w-full" />
             <button
               onClick={() => setShowedMore(!showedMore)}
               className="min-h-[50px] hover:border-2 hover:border-gray rounded-[24px]"
@@ -119,7 +119,7 @@ const Home = () => {
                 {showedMore ? "Show less" : "Show more"}
               </p>
             </button>
-            <div className="bg-gray h-[1px] opacity-50 my-16 w-full" />
+            <div className="bg-gray h-[1px] opacity-50 my-[125px] w-full" />
           </div>
         </div>
       </div>
