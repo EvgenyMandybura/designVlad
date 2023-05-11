@@ -10,18 +10,15 @@ import project8 from "../assets/project8.svg";
 
 export const projects = [
   {
-    name: "Starlite racing league",
-    categories: "ART DIRECTION,  UX/UI DESIGN,  INTERACTION & GAME DESIGN",
-    dates: "Nov 21 - Jan 22",
+    name: "Moonstone bank",
+    categories: "PRODUCT DESIGN,  STRATEGY,  DESIGN SYSTEM",
+    dates: "Jul 2022 - Mar 2023 ",
     description:
-      "Starlite made using the Unreal Engine 4.26 and AWS cloud. \n" +
-      "This is the MVP version.\n" +
-      " The main idea is to  develop a game with a rout “Bering Strait”. I was as the Art director in that project.\n" +
-      "The game design is in the futuristic style. The racing cars are electric and can be charged during a race on the charging strips.\n" +
-      " \n",
+      "Moonstone Bank™ is a Washington State bank that specializes in catering to Small and Medium Enterprises (SMEs). \n" +
+      "The goal was to create quick MVP version, this product has a huge eco product system and should be adapted as a white label with scalable design system.",
     image: (
-      <div className="photo">
-        <img src={project1} className="imgProject" alt="p1" />
+      <div className="photo4">
+        <img src={project3} className="imgProject" alt="p3" />
       </div>
     ),
     img: "img1Bg",
@@ -46,15 +43,18 @@ export const projects = [
     img: "img4Bg",
   },
   {
-    name: "Moonstone bank",
-    categories: "PRODUCT DESIGN,  STRATEGY,  DESIGN SYSTEM",
-    dates: "Jul 2022 - Mar 2023 ",
+    name: "Starlite racing league",
+    categories: "ART DIRECTION,  UX/UI DESIGN,  INTERACTION & GAME DESIGN",
+    dates: "Nov 21 - Jan 22",
     description:
-      "Moonstone Bank™ is a Washington State bank that specializes in catering to Small and Medium Enterprises (SMEs). \n" +
-      "The goal was to create quick MVP version, this product has a huge eco product system and should be adapted as a white label with scalable design system.",
+      "Starlite made using the Unreal Engine 4.26 and AWS cloud. \n" +
+      "This is the MVP version.\n" +
+      " The main idea is to  develop a game with a rout “Bering Strait”. I was as the Art director in that project.\n" +
+      "The game design is in the futuristic style. The racing cars are electric and can be charged during a race on the charging strips.\n" +
+      " \n",
     image: (
-      <div className="photo4">
-        <img src={project3} className="imgProject" alt="p3" />
+      <div className="photo">
+        <img src={project1} className="imgProject" alt="p1" />
       </div>
     ),
     img: "img1Bg",

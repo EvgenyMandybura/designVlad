@@ -20,7 +20,9 @@ export const Project = ({ project, index, lastIndex }) => {
             <p className="caption7">Timeline</p>
             <p className="caption8 ml-3 opacity-60">{project.dates}</p>
           </div>
-          <p className="caption8 opacity-60 pr-[60px]">{project.description}</p>
+          <p className="caption8 !font-font3 !text-[16px] opacity-60 pr-[60px] tracking-[.01em] !leading-7">
+            {project.description}
+          </p>
         </div>
       </div>
 
