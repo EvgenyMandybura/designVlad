@@ -113,7 +113,7 @@ const Home = () => {
             <div className="bg-gray h-[1px] opacity-50 my-[125px] w-full" />
             <button
               onClick={() => setShowedMore(!showedMore)}
-              className="min-h-[50px] hover:border-2 hover:border-gray rounded-[24px]"
+              className="min-h-[50px] hover:border-[1px] hover:border-[#404040] rounded-[24px]"
             >
               <p className="font-sans text-base leading-5 text-mainLight mx-8 py-4 w-[90px]">
                 {showedMore ? "Show less" : "Show more"}
