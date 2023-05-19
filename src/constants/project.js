@@ -22,6 +22,7 @@ export const projects = [
       </div>
     ),
     img: "img1Bg",
+    underNDA: true,
   },
 
   {
@@ -41,6 +42,7 @@ export const projects = [
       </div>
     ),
     img: "img4Bg",
+    underNDA: false,
   },
   {
     name: "Starlite racing league",
@@ -58,6 +60,7 @@ export const projects = [
       </div>
     ),
     img: "img1Bg",
+    underNDA: false,
   },
   {
     name: "Control Software",
@@ -73,6 +76,7 @@ export const projects = [
       </div>
     ),
     img: "img4Bg",
+    underNDA: false,
   },
   {
     name: "Swiss value card",
@@ -86,6 +90,7 @@ export const projects = [
       </div>
     ),
     img: "img5Bg",
+    underNDA: false,
   },
   {
     name: "ETQueue",
@@ -100,6 +105,7 @@ export const projects = [
       </div>
     ),
     img: "img6Bg",
+    underNDA: false,
   },
   {
     name: "Hunting Grounds",
@@ -116,6 +122,7 @@ export const projects = [
       </div>
     ),
     img: "img7Bg",
+    underNDA: false,
   },
   {
     name: "Bohdan Shevchenko dev's portfolio",
@@ -131,6 +138,7 @@ export const projects = [
       </div>
     ),
     img: "img8Bg",
+    underNDA: false,
   },
 ];
 

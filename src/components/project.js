@@ -7,8 +7,15 @@ export const Project = ({ project, index, lastIndex }) => {
     <div key={index}>
       <div className="flex flex-row">
         <div
-          className={`${project.img} w-[50%] ${isOdd ? "order-1" : "order-3"} `}
+          className={`${project.img} relative w-[50%] ${
+            isOdd ? "order-1" : "order-3"
+          } `}
         >
+          <div className="absolute flex items-center justify-center bgWhite top-6 left-6 h-[42px] w-[81px]">
+            <p className="font-font2 font-medium text-base leading-[32px]">
+              🔒 NDA
+            </p>
+          </div>
           {project.image}
         </div>
         <div className={`w-[50%] ${isOdd && "pl-[80px]"} order-2`}>

@@ -142,6 +142,10 @@
   justify-content: end;
 }
 
+.bgWhite {
+  background-color: #F4F4F4;
+}
+
 .imgProject {
   transition: transform 1.5s;
 }
