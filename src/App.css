@@ -58,8 +58,17 @@
   @apply font-font3 font-normal text-[18px] leading-[30px]
 }
 
+.caption15 {
+  @apply font-font3 font-normal text-[18px] leading-[28px] text-[#7B7B7B]
+}
+
+
 .linkHover {
   position: relative;
+}
+
+.underlineText {
+  text-decoration: underline;
 }
 
 .linkHover:after {

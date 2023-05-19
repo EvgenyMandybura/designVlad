@@ -47,24 +47,36 @@ const Modal = (props) => {
       <div className="modal" onClick={props.onClose}>
         <div className="modal-content" onClick={(e) => e.stopPropagation()}>
           <div className="modal-body">
-            <div className="bg-blue-300 min-w-screen min-h-screen overflow-x-hidden">
+            <div className="bg-blue-300 min-w-screen min-h-screen overflow-x-hidden p-16">
               <div>
-                <p>🔒 Moonstone bank </p>
-                <p>
+                <p className="font-font2 text-[20px] leading-[32px] text-dark2 mb-3">
+                  🔒 Moonstone bank{" "}
+                </p>
+                <p className="font-font2 text-[20px] leading-[28px] text-dark2">
                   I’m willing to show you the case and share you the details,
                   but the following project contains sensitive data.
                 </p>
-                <span> Please, contact me through my </span>
-                <Link
-                  to="https://www.linkedin.com/in/vladyslav-chyhryn/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  LinkedIn
-                </Link>{" "}
-                <span> or </span>
-                <a href="mailto: chyhryn.vlad@gmail.com">E-mail</a>
-                <span> to get the magic key 🔑 </span>
+                <p className="mt-3 mb-6">
+                  <span className="caption15">
+                    Please, contact me through my{" "}
+                  </span>
+                  <Link
+                    to="https://www.linkedin.com/in/vladyslav-chyhryn/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="caption15 !text-dark2 underlineText"
+                  >
+                    LinkedIn
+                  </Link>{" "}
+                  <span className="caption15"> or </span>
+                  <a
+                    href="mailto: chyhryn.vlad@gmail.com"
+                    className="caption15 !text-dark2 underlineText"
+                  >
+                    E-mail
+                  </a>
+                  <span className="caption15"> to get the magic key 🔑 </span>
+                </p>
               </div>
               <form
                 onSubmit={formik.handleSubmit}
