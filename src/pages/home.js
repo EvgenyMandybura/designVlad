@@ -10,7 +10,7 @@ import Footer from "../components/footer";
 
 const Home = () => {
   const [showedMore, setShowedMore] = useState(false);
-
+  const [showModal, setShowModal] = useState(false);
   return (
     <div>
       <div className="bg-mainLight px-[140px] pt-[40px] h-[100vh]">
@@ -99,6 +99,8 @@ const Home = () => {
                   project={project}
                   index={index}
                   lastIndex={shortListLastIndex}
+                  showModal={showModal}
+                  setShowModal={setShowModal}
                 />
               )
             ) : (
@@ -106,6 +108,8 @@ const Home = () => {
                 project={project}
                 index={index}
                 lastIndex={fullListLastIndex}
+                showModal={showModal}
+                setShowModal={setShowModal}
               />
             )
           )}

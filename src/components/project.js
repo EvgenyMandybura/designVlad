@@ -1,8 +1,16 @@
 import React from "react";
 import { fullListLastIndex, shortListLastIndex } from "../constants/project";
+import Modal from "./modal";
 
-export const Project = ({ project, index, lastIndex }) => {
+export const Project = ({
+  project,
+  index,
+  lastIndex,
+  showModal,
+  setShowModal,
+}) => {
   let isOdd = index % 2 === 0;
+
   return (
     <div key={index}>
       <div className="flex flex-row">
@@ -12,10 +20,20 @@ export const Project = ({ project, index, lastIndex }) => {
           } `}
         >
           {project.underNDA && (
-            <div className="absolute flex items-center justify-center bgWhite top-6 left-6 h-[42px] w-[81px]">
+            <div
+              onClick={() => setShowModal(!showModal)}
+              className="absolute flex items-center justify-center bgWhite top-6 left-6 h-[42px] w-[81px]"
+            >
               <p className="font-font2 font-medium text-base leading-[32px]">
                 🔒 NDA
               </p>
+              <Modal
+                title="My Modal"
+                onClose={() => setShowModal(!showModal)}
+                show={showModal}
+              >
+                <p>This is modal body</p>
+              </Modal>
             </div>
           )}
           {project.image}

@@ -5,7 +5,6 @@ import { cycleSteps } from "../constants/cycleSteps";
 import twoDiamond from "../assets/twoDiamond.svg";
 import group from "../assets/stars/groupOfStars.svg";
 import star from "../assets/stars/star.svg";
-import star2 from "../assets/stars/star2.svg";
 
 const Projects = () => (
   <div>
