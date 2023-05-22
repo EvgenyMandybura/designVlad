@@ -17,6 +17,7 @@ module.exports = {
       divider: "#D6D6D6",
       separatingLine: "#404040",
       secondaryOnDark: "#989898",
+      red1: "#C64326",
     },
     fontFamily: {
       sans: ["ClashDisplay-Medium", "sans-serif"],

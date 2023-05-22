@@ -46,7 +46,12 @@ const Modal = (props) => {
       timeout={{ enter: 0, exit: 300 }}
     >
       <div className="modal" onClick={props.onClose}>
-        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <div
+          className={`modal-content ${
+            isButtonSet && !openNDA && "modal-content-width"
+          }`}
+          onClick={(e) => e.stopPropagation()}
+        >
           <div className="modal-body">
             <div className="bg-blue-300 min-w-screen min-h-screen overflow-x-hidden p-16">
               <div>
@@ -92,14 +97,14 @@ const Modal = (props) => {
                       formik.touched.name && formik.errors.name
                         ? "border-red-400"
                         : "border-gray-300"
-                    }`}
+                    } ${isButtonSet && !openNDA && "mb-2 border-red1"}`}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.name}
                     placeholder="Enter the secret key"
                   />
                   {isButtonSet && !openNDA && (
-                    <span>
+                    <span className="mt-2 text-red1">
                       It seems like the password doesn’t match. Just contact me
                       again, we will solve that quickly.
                     </span>
