@@ -22,7 +22,7 @@ export const Project = ({
           {project.underNDA && (
             <div
               onClick={() => setShowModal(!showModal)}
-              className="absolute flex items-center justify-center bgWhite top-6 left-6 h-[42px] w-[81px]"
+              className="absolute flex items-center justify-center bgWhite top-6 left-6 h-[42px] w-[81px] `hover:cursor-pointer`"
             >
               <p className="font-font2 font-medium text-base leading-[32px]">
                 🔒 NDA

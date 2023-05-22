@@ -62,6 +62,13 @@
   @apply font-font3 font-normal text-[18px] leading-[28px] text-[#7B7B7B]
 }
 
+.caption16 {
+  @apply font-font3 font-normal text-sm tracking-[0.04em] leading-6
+}
+
+.caption17 {
+  @apply font-font2 font-medium text-base tracking-[0.04em] leading-6
+}
 
 .linkHover {
   position: relative;

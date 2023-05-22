@@ -5,6 +5,7 @@ import "./Modal.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { Link } from "react-router-dom";
+import { ReactComponent as BackArrow } from "../assets/backArrow.svg";
 
 const NDA_KEY = process.env.REACT_APP_NDA_PASSWORD;
 
@@ -80,14 +81,14 @@ const Modal = (props) => {
               </div>
               <form
                 onSubmit={formik.handleSubmit}
-                className="max-w-lg mx-auto bg-white rounded shadow-lg mt-7 p-3"
+                className="max-w-lg mx-auto rounded"
               >
-                <div className="mb-4">
+                <div className="mb-6">
                   <input
                     type="text"
                     name="name"
                     id="name"
-                    className={`block w-full rounded border py-1 px-2 ${
+                    className={`block w-full bg-mainLight rounded border border-solid border-[#D5D5D5] py-4 px-6 caption16 ${
                       formik.touched.name && formik.errors.name
                         ? "border-red-400"
                         : "border-gray-300"
@@ -105,12 +106,23 @@ const Modal = (props) => {
                   )}
                 </div>
 
-                <div className="text-center">
+                <div className="bg-gray h-px opacity-25 mb-4"></div>
+
+                <div className="flex flex-row justify-between items-center">
+                  <div
+                    onClick={() => props.onClose()}
+                    className="flex flex-row hover:cursor-pointer"
+                  >
+                    <BackArrow />
+                    <span className="ml-2 caption17 text-[#7B7B7B]">Back</span>
+                  </div>
                   <button
                     className="bg-blue-500 rounded p-3 text-white"
                     type="submit"
                   >
-                    Submit
+                    <span className="caption17 !text-[#2B2B2B] opacity-50 linkHover">
+                      Submit
+                    </span>
                   </button>
                 </div>
               </form>
